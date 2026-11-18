@@ -14,7 +14,7 @@
 <meta name="theme-color" content="#1b2a3a">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="BG Welsh LLC">
-<meta property="og:title" content="BG Welsh LLC | Water lines, waterers and concrete for Nebraska farms and ranches">
+<meta property="og:title" content="BG Welsh LLC | Built for the land. Water lines, waterers and concrete in Franklin, Nebraska">
 <meta property="og:description" content="Cattle waterers, stock water lines, feedlot runways and bunks, concrete pads, retaining walls and dirt work around Franklin, Nebraska. Call or text Gina at (308) 470-1254.">
 <meta property="og:url" content="https://bonhamjd.github.io/bgwelsh/">
 <meta property="og:image" content="https://bonhamjd.github.io/bgwelsh/img/og.jpg">
@@ -29,7 +29,7 @@
  "logo": "https://bonhamjd.github.io/bgwelsh/img/logo.webp",
  "image": "https://bonhamjd.github.io/bgwelsh/img/og.jpg",
  "foundingDate": "2016",
- "description": "Family-owned, veteran-owned contractor in Franklin, Nebraska: cattle waterers, stock water lines, trenching, feedlot runways and bunks, concrete pads, retaining walls, dirt work and lawn sprinklers for farms and ranches. Also insured for FEMA work, with completed storm cleanup under a FEMA contract and site work helping build an FSA office.",
+ "description": "Family-owned, veteran-owned contractor in Franklin, Nebraska, working across south-central Nebraska and northern Kansas and traveling for large jobs: cattle waterers, stock water lines, trenching, feedlot runways and bunks, concrete pads, retaining walls, dirt work and lawn sprinklers for farms and ranches. Also insured for FEMA work, with completed storm cleanup under a FEMA contract and site work helping build an FSA office.",
  "telephone": "+1-308-470-1254",
  "address": {
   "@type": "PostalAddress",
@@ -39,15 +39,6 @@
   "addressCountry": "US"
  },
  "areaServed": [
-  {
-   "@type": "GeoCircle",
-   "geoMidpoint": {
-    "@type": "GeoCoordinates",
-    "latitude": 40.096,
-    "longitude": -98.952
-   },
-   "geoRadius": "145000"
-  },
   {
    "@type": "State",
    "name": "Nebraska"
@@ -172,7 +163,7 @@
    "name": "How far do you travel?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "We work across the area on the map above, about two hours of driving from Franklin. Mileage is figured into the quote, so call Gina to see if your job is in range."
+    "text": "We're based in Franklin, Nebraska, regularly work across south-central Nebraska and northern Kansas, and have the ability to travel for large jobs. Mileage is figured into the quote, so call Gina to see if your job is in range."
    }
   },
   {
@@ -406,7 +397,7 @@ footer{background:#0f1922;color:var(--on-ink-2);padding-block:32px;font-size:15p
  .callbar .btn{flex:1}
  .callbar .btn-line{flex:0 0 auto}
  body{padding-bottom:76px}
- .hero .ctas .btn-primary,.storm-cta{display:none}
+ .storm-cta{display:none}
 }
 @media print{.top,.subnav,.callbar{display:none}}
 
@@ -432,6 +423,37 @@ footer{background:#0f1922;color:var(--on-ink-2);padding-block:32px;font-size:15p
 .dl-txt strong{font:700 15.5px/1.25 var(--body)}
 .dl-txt small{font:500 13px/1.2 var(--body);color:var(--muted,#55524c)}
 @media (prefers-reduced-motion:reduce){.dl{transition:none}.dl:hover{transform:none}}
+
+/* Home base map: static card first, Leaflet loads on tap */
+.map-box{position:relative;isolation:isolate;z-index:0;width:100%;aspect-ratio:4/3;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#2a3b4c}
+.map-ph{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;gap:2px;text-align:center;padding:24px;color:var(--on-ink);
+ background:repeating-linear-gradient(0deg,transparent 0 39px,rgba(255,255,255,.05) 39px 40px),repeating-linear-gradient(90deg,transparent 0 39px,rgba(255,255,255,.05) 39px 40px),radial-gradient(ellipse at 50% 45%,#34495d 0%,#22303f 75%)}
+.map-ph{place-content:start center;padding-top:calc(44% * .75 - 58px)}
+.map-ph::before{content:"";position:absolute;left:50%;top:44%;width:46%;aspect-ratio:1;transform:translate(-50%,-50%);border:3px dotted rgba(255,255,255,.85);border-radius:50%;pointer-events:none}
+.map-ph>*{position:relative}
+.map-ring-label{position:absolute!important;left:50%;top:calc(13.3% - 8px);transform:translate(-50%,-100%);font:700 11px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.8)}
+.map-pin{width:30px;height:40px;color:#c8463d;filter:drop-shadow(0 3px 4px rgba(0,0,0,.35))}
+.map-ph-name{font:700 22px/1.2 var(--display);margin-top:6px;color:#fff}
+.map-ph-place{color:var(--on-ink-2);font-size:15px}
+.map-ph .btn-dark{background:#fff;color:var(--ink)}
+.map-ph .btn-dark:hover{background:var(--tan-2)}
+.leaflet-tooltip.ring-tip{background:transparent;border:0;box-shadow:none;color:#fff;font:700 11px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;text-shadow:0 1px 3px rgba(0,0,0,.7)}
+.leaflet-tooltip.ring-tip::before{display:none}
+.map-open{position:absolute!important;left:50%;bottom:16px;transform:translateX(-50%);white-space:nowrap}
+.map-box .leaflet-container{width:100%;height:100%;font:14px/1.4 var(--body)}
+@media (max-width:720px){.map-box{aspect-ratio:1/1}.map-ph{padding-top:calc(44% - 58px)}.map-ph::before{width:60%}.map-ring-label{top:calc(14% - 8px)!important}}
+.base-pin{color:var(--rust)}
+.base-pin svg{width:28px;height:38px;filter:drop-shadow(0 3px 4px rgba(0,0,0,.25))}
+
+.hero h1#hero-title em{display:block}
+.hero h1#hero-title{font-size:clamp(44px,6.4vw,84px);line-height:.98;letter-spacing:-.02em;margin-top:14px}
+.hero .kicker{font-size:14px;letter-spacing:.16em}
+.hero .subhead{font:700 clamp(24px,2.9vw,34px)/1.3 var(--display);color:var(--on-ink);margin-top:18px;max-width:28ch;text-wrap:balance}
+.hero .subhead span{color:var(--tan);margin-inline:.18em}
+.hero .lead{font-size:clamp(17px,1.8vw,19px);margin-top:18px}
+.hero .ctas .btn-primary{min-height:58px;padding:0 30px;font-size:19px}
+.hero .ctas .btn-primary svg{width:22px;height:22px}
+@media (max-width:720px){.hero .ctas{flex-direction:column;align-items:stretch}.hero .ctas .btn{width:100%}}
 </style>
 </head>
 <body>
@@ -455,11 +477,12 @@ footer{background:#0f1922;color:var(--on-ink-2);padding-block:32px;font-size:15p
 <section class="hero" aria-labelledby="hero-title">
  <div class="wrap hero-in">
   <div>
-   <p class="eyebrow">Franklin, Nebraska &middot; Est. 2016</p>
-   <h1 id="hero-title">Water lines, waterers and concrete for <em>Nebraska farms and ranches.</em></h1>
-   <p class="lead">BG Welsh LLC handles trenching, stock water lines, cattle waterers, feedlot concrete and retaining walls around Franklin, Nebraska. Brian and Gina run it, and they run cattle too.</p>
+   <p class="eyebrow kicker">BG Welsh &middot; Franklin, Nebraska</p>
+   <h1 id="hero-title">Built for the land. <em>Ready for the storm.</em></h1>
+   <p class="subhead">Water lines <span aria-hidden="true">&bull;</span> Concrete <span aria-hidden="true">&bull;</span> Dirt work <span aria-hidden="true">&bull;</span> Storm cleanup</p>
+   <p class="lead">Family owned in Franklin, Nebraska since 2016, working for farms, ranches and government projects across Nebraska and Kansas.</p>
    <div class="ctas">
-    <a class="btn btn-primary" href="tel:+13084701254"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call Gina (308) 470-1254</a>
+    <a class="btn btn-primary" href="tel:+13084701254"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call Gina</a>
     <a class="btn btn-line" href="#work">See recent work</a>
    </div>
    <ul class="proof" aria-label="At a glance">
@@ -542,11 +565,19 @@ footer{background:#0f1922;color:var(--on-ink-2);padding-block:32px;font-size:15p
  <div class="wrap area">
   <div class="sec-head" style="margin:0">
    <p class="eyebrow">Where we work</p>
-   <h2 id="area-title">About two hours from Franklin.</h2>
-   <p class="lead">South-central Nebraska and northern Kansas, including Kearney, Grand Island, Hastings and Lexington. Mileage is figured into the quote. Not sure you're in range? Call Gina.</p>
-   <p class="small">Drive times estimated from road routing. Map data &copy; OpenStreetMap contributors.</p>
+   <h2 id="area-title">Based in Franklin, Nebraska.</h2>
+   <p class="lead">We serve south-central Nebraska and northern Kansas, and we have the ability to travel for large jobs. Mileage is figured into the quote. Not sure you're in range? Call Gina.</p>
+   <p class="small">Map data &copy; <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a> contributors.</p>
   </div>
-  <img class="area-img" src="img/service-area-map.webp" width="780" height="700" loading="lazy" decoding="async" alt="Map of the area around Franklin, Nebraska, outlined at about 2 hours of driving, reaching Lexington, Kearney, Grand Island, Hastings and northern Kansas">
+  <div class="map-box" id="bases-map" role="region" aria-label="Map of BG Welsh home base in Franklin, Nebraska, with a dotted circle showing the typical range">
+   <div class="map-ph">
+    <span class="map-ring-label" aria-hidden="true">Typical range</span>
+    <svg class="map-pin" viewBox="0 0 24 32" aria-hidden="true"><path d="M12 0C5.4 0 0 5.3 0 11.9 0 20.8 12 32 12 32s12-11.2 12-20.1C24 5.3 18.6 0 12 0z" fill="currentColor"/><circle cx="12" cy="12" r="4.5" fill="#fff"/></svg>
+    <p class="map-ph-name">BG Welsh</p>
+    <p class="map-ph-place">Franklin, Nebraska</p>
+    <button class="btn btn-dark map-open" type="button">Open interactive map</button>
+   </div>
+  </div>
  </div>
 </section>
 
@@ -554,7 +585,7 @@ footer{background:#0f1922;color:var(--on-ink-2);padding-block:32px;font-size:15p
  <div class="wrap">
   <div class="sec-head"><p class="eyebrow">FAQ</p><h2 id="faq-title">Common questions.</h2></div>
   <div class="faq">
-   <details><summary>How far do you travel?</summary><p>We work across the area on the map above, about two hours of driving from Franklin. Mileage is figured into the quote, so call Gina to see if your job is in range.</p></details>
+   <details><summary>How far do you travel?</summary><p>We're based in Franklin, Nebraska, regularly work across south-central Nebraska and northern Kansas, and have the ability to travel for large jobs. Mileage is figured into the quote, so call Gina to see if your job is in range.</p></details>
    <details><summary>Do you install waterers?</summary><p>Yes. We set the waterer, run the water line and pour the concrete around it.</p></details>
    <details><summary>Can you pour feedlot concrete?</summary><p>Yes. Pads, aprons, alleys, runways and bunk concrete built for cattle traffic.</p></details>
    <details><summary>Do you take government jobs?</summary><p>Yes. BG Welsh is insured for FEMA work and has done storm cleanup under a FEMA contract and site work helping build an FSA office. See the <a href="government.html">government and FEMA page</a>.</p></details>
@@ -586,5 +617,36 @@ footer{background:#0f1922;color:var(--on-ink-2);padding-block:32px;font-size:15p
 </footer>
 
 <div class="callbar"><a class="btn btn-primary" href="tel:+13084701254">Call Gina (308) 470-1254</a><a class="btn btn-line" href="sms:+13084701254">Text</a></div>
+<script>
+/* Home bases. To add another base, add a line: {name:"BG Welsh", place:"Town, State", lat:00.000, lng:-00.000} */
+/* rangeMiles draws the dotted "Typical range" circle; leave it out for no circle. */
+var BG_BASES=[
+ {name:"BG Welsh", place:"Franklin, Nebraska", lat:40.0961, lng:-98.9523, rangeMiles:70}
+];
+(function(){
+ var box=document.getElementById("bases-map");if(!box)return;
+ var btn=box.querySelector(".map-open");
+ function css(h,i){return new Promise(function(r){var l=document.createElement("link");l.rel="stylesheet";l.href=h;l.integrity=i;l.crossOrigin="";l.onload=r;document.head.appendChild(l)})}
+ function js(s,i){return new Promise(function(r,j){var e=document.createElement("script");e.src=s;e.integrity=i;e.crossOrigin="";e.onload=r;e.onerror=j;document.head.appendChild(e)})}
+ btn.addEventListener("click",function(){
+  btn.disabled=true;btn.textContent="Loading map\u2026";
+  Promise.all([css("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css","sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="),js("https://unpkg.com/leaflet@1.9.4/dist/leaflet.js","sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=")]).then(function(){
+   box.innerHTML="";
+   var map=L.map(box,{scrollWheelZoom:false,zoomSnap:0.25}).setView([BG_BASES[0].lat,BG_BASES[0].lng],8);
+   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+   var icon=L.divIcon({className:"base-pin",html:box.dataset.pin||'<svg viewBox="0 0 24 32" aria-hidden="true"><path d="M12 0C5.4 0 0 5.3 0 11.9 0 20.8 12 32 12 32s12-11.2 12-20.1C24 5.3 18.6 0 12 0z" fill="currentColor"/><circle cx="12" cy="12" r="4.5" fill="#fff"/></svg>',iconSize:[28,38],iconAnchor:[14,38],popupAnchor:[0,-34]});
+   var shapes=[];
+   BG_BASES.forEach(function(b){if(!b.rangeMiles)return;var r=b.rangeMiles*1609.34;
+    L.circle([b.lat,b.lng],{radius:r,color:"#1b2a3a",opacity:.35,weight:6,fill:false,interactive:false}).addTo(map);
+    var c=L.circle([b.lat,b.lng],{radius:r,color:"#fff",weight:3,dashArray:"1 9",lineCap:"round",fillColor:"#1b2a3a",fillOpacity:.06,interactive:false}).addTo(map);
+    L.tooltip({permanent:true,direction:"center",className:"ring-tip"}).setLatLng([b.lat+b.rangeMiles/69*0.93,b.lng]).setContent("Typical range").addTo(map);
+    shapes.push(c)});
+   var pts=BG_BASES.map(function(b){var m=L.marker([b.lat,b.lng],{icon:icon,title:b.name+", "+b.place,alt:b.name+", "+b.place}).addTo(map).bindPopup("<strong>"+b.name+"</strong>, "+b.place);return m});
+   map.fitBounds(L.featureGroup(pts.concat(shapes)).getBounds().pad(0.12));
+   pts[0].openPopup();
+  }).catch(function(e){console.error(e);btn.disabled=false;btn.textContent="Map didn't load. Try again"});
+ });
+})();
+</script>
 </body>
 </html>

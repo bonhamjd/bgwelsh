@@ -4,7 +4,7 @@
 
 - Contact: Gina Welsh, call or text (308) 470-1254
 - Location: Franklin, Nebraska 68939
-- Service area: about two hours of driving from Franklin, covering south-central Nebraska and northern Kansas (Kearney, Grand Island, Hastings, Lexington)
+- Service area: based in Franklin, Nebraska; regularly works across south-central Nebraska and northern Kansas, with the ability to travel for large jobs. Mileage is figured into the quote.
 - Owners: Brian and Gina Welsh, who also run a cattle herd
 - Ownership: family owned, veteran owned
 - Insurance: insured for FEMA work
@@ -29,6 +29,6 @@
 
 ## Pages
 
-- [Home: farm and ranch work](https://bonhamjd.github.io/bgwelsh/): services, recent jobs, service area, FAQ
+- [Home: farm and ranch work](https://bonhamjd.github.io/bgwelsh/): services, recent jobs, where we work, FAQ
 - [Government and FEMA work](https://bonhamjd.github.io/bgwelsh/government.html): contracting officer facts, NAICS codes, storm and FEMA recovery, past performance, government FAQ
 - [Capability statement](https://bonhamjd.github.io/bgwelsh/capability.html): one-page printable summary ([PDF](https://bonhamjd.github.io/bgwelsh/capability-statement.pdf))
