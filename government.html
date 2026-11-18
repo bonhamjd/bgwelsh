@@ -285,6 +285,15 @@ footer{background:#0f1922;color:var(--on-ink-2);padding-block:32px;font-size:15p
  .hero .ctas .btn-primary,.storm-cta{display:none}
 }
 @media print{.top,.subnav,.callbar{display:none}}
+
+.dl{display:inline-flex;align-items:center;gap:14px;padding:12px 18px 12px 12px;border-radius:10px;background:var(--white,#fff);border:1.5px solid var(--ink,#14202c);color:var(--ink,#14202c);text-decoration:none;box-shadow:0 1px 0 rgba(20,32,44,.06),0 8px 24px -12px rgba(20,32,44,.35);transition:transform .15s,box-shadow .15s}
+.dl:hover{transform:translateY(-1px);box-shadow:0 1px 0 rgba(20,32,44,.06),0 14px 30px -12px rgba(20,32,44,.45)}
+.dl-ico{display:grid;place-items:center;width:42px;height:42px;border-radius:8px;background:var(--rust,#9e2f28);color:#fff;flex:none}
+.dl-ico svg{width:22px;height:22px}
+.dl-txt{display:grid;gap:3px;text-align:left}
+.dl-txt strong{font:700 15.5px/1.25 var(--body)}
+.dl-txt small{font:500 13px/1.2 var(--body);color:var(--muted,#55524c)}
+@media (prefers-reduced-motion:reduce){.dl{transition:none}.dl:hover{transform:none}}
 </style>
 </head>
 <body>
@@ -333,7 +342,7 @@ footer{background:#0f1922;color:var(--on-ink-2);padding-block:32px;font-size:15p
    <h2 id="co-title">The short version.</h2>
    <p>Everything you need to qualify BG Welsh, on one printable page.</p>
    <a class="btn btn-dark" href="capability.html">View capability statement</a>
-   <p style="margin-top:12px;font-size:15px"><a href="capability-statement.pdf" download>Download PDF</a></p>
+   <div style="margin-top:14px"><a class="dl" href="capability-statement.pdf" download="BG-Welsh-capability-statement.pdf"><span class="dl-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg></span><span class="dl-txt"><strong>Download capability statement (PDF)</strong><small>1 page &middot; 250 KB &middot; print ready</small></span></a></div>
   </div>
   <div>
    <dl class="co-facts">
@@ -421,6 +430,7 @@ footer{background:#0f1922;color:var(--on-ink-2);padding-block:32px;font-size:15p
    <p class="eyebrow">Past performance</p>
    <h2 id="pp-title">Work already done.</h2>
    <p class="lead">References and project details are available on request.</p>
+   <div><a class="dl" href="capability-statement.pdf" download="BG-Welsh-capability-statement.pdf"><span class="dl-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg></span><span class="dl-txt"><strong>Download capability statement (PDF)</strong><small>1 page &middot; 250 KB &middot; print ready</small></span></a></div>
   </div>
   <div class="pp-gov">
    <article class="pp-card"><img src="img/fema-pole-skidsteer-640.webp" width="640" height="480" loading="lazy" decoding="async" alt="Skid steer working a broken wooden power pole along a fence line during storm cleanup"><p class="eyebrow">Government &middot; FEMA contract</p><h3>FEMA contract storm cleanup for a power company</h3><p>Storm cleanup completed under a FEMA contract for a power company, including pulling broken power poles and hauling them out.</p></article>

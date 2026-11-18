@@ -27,7 +27,7 @@ h1,h2,h3{font-family:var(--display);font-weight:700;margin:0;line-height:1.1}
 p,ul,dl,dd{margin:0}
 a{color:inherit}
 :focus-visible{outline:3px solid var(--rust);outline-offset:2px}
-.tools{max-width:8.5in;margin:24px auto 12px;padding:0 16px;display:flex;gap:10px;justify-content:space-between;align-items:center;font:600 14px/1 var(--body)}
+.tools{max-width:8.5in;margin:24px auto 16px;padding:0 16px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;font:600 14px/1 var(--body)}
 .tools a{text-decoration:none}
 .btn{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:6px;background:var(--ink);color:#f2eee6;border:0;font:700 15px/1 var(--body);cursor:pointer;text-decoration:none}
 .sheet{max-width:8.5in;margin:0 auto 40px;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.06),0 12px 40px rgba(0,0,0,.08)}
@@ -80,10 +80,19 @@ dl.data dd{font-weight:600}
  section+section{margin-top:12px}
  a{text-decoration:none}
 }
+
+.dl{display:inline-flex;align-items:center;gap:14px;padding:12px 18px 12px 12px;border-radius:10px;background:var(--white,#fff);border:1.5px solid var(--ink,#14202c);color:var(--ink,#14202c);text-decoration:none;box-shadow:0 1px 0 rgba(20,32,44,.06),0 8px 24px -12px rgba(20,32,44,.35);transition:transform .15s,box-shadow .15s}
+.dl:hover{transform:translateY(-1px);box-shadow:0 1px 0 rgba(20,32,44,.06),0 14px 30px -12px rgba(20,32,44,.45)}
+.dl-ico{display:grid;place-items:center;width:42px;height:42px;border-radius:8px;background:var(--rust,#9e2f28);color:#fff;flex:none}
+.dl-ico svg{width:22px;height:22px}
+.dl-txt{display:grid;gap:3px;text-align:left}
+.dl-txt strong{font:700 15.5px/1.25 var(--body)}
+.dl-txt small{font:500 13px/1.2 var(--body);color:var(--muted,#55524c)}
+@media (prefers-reduced-motion:reduce){.dl{transition:none}.dl:hover{transform:none}}
 </style>
 </head>
 <body>
-<div class="tools"><a href="./">&larr; Back to bgwelsh site</a><span style="display:flex;gap:16px;align-items:center"><a href="capability-statement.pdf" download>Download PDF</a><button class="btn" type="button" onclick="window.print()">Print</button></span></div>
+<div class="tools"><a href="./">&larr; Back to bgwelsh site</a><span style="display:flex;gap:16px;align-items:center"><a class="dl" href="capability-statement.pdf" download="BG-Welsh-capability-statement.pdf"><span class="dl-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg></span><span class="dl-txt"><strong>Download capability statement (PDF)</strong><small>1 page &middot; 250 KB &middot; print ready</small></span></a><button class="btn" type="button" onclick="window.print()" style="background:transparent;color:var(--ink);border:1.5px solid var(--ink)">Print</button></span></div>
 <main class="sheet">
  <header class="head">
   <div style="display:flex;gap:20px;align-items:center">

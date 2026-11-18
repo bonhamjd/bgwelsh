@@ -420,8 +420,18 @@ footer{background:#0f1922;color:var(--on-ink-2);padding-block:32px;font-size:15p
 .gov-in img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
 .gov-in h2{font-size:clamp(26px,3.2vw,34px);margin-top:10px}
 .gov-in p:not(.eyebrow){color:var(--muted);margin-top:12px;max-width:56ch}
-.gov-in .btn{margin-top:var(--s3);border-color:var(--ink);color:var(--ink)}
+.gov-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:var(--s3)}
+.gov-in .btn{border-color:var(--ink);color:var(--ink)}
 .gov-in .btn:hover{background:var(--ink);color:var(--on-ink)}
+
+.dl{display:inline-flex;align-items:center;gap:14px;padding:12px 18px 12px 12px;border-radius:10px;background:var(--white,#fff);border:1.5px solid var(--ink,#14202c);color:var(--ink,#14202c);text-decoration:none;box-shadow:0 1px 0 rgba(20,32,44,.06),0 8px 24px -12px rgba(20,32,44,.35);transition:transform .15s,box-shadow .15s}
+.dl:hover{transform:translateY(-1px);box-shadow:0 1px 0 rgba(20,32,44,.06),0 14px 30px -12px rgba(20,32,44,.45)}
+.dl-ico{display:grid;place-items:center;width:42px;height:42px;border-radius:8px;background:var(--rust,#9e2f28);color:#fff;flex:none}
+.dl-ico svg{width:22px;height:22px}
+.dl-txt{display:grid;gap:3px;text-align:left}
+.dl-txt strong{font:700 15.5px/1.25 var(--body)}
+.dl-txt small{font:500 13px/1.2 var(--body);color:var(--muted,#55524c)}
+@media (prefers-reduced-motion:reduce){.dl{transition:none}.dl:hover{transform:none}}
 </style>
 </head>
 <body>
@@ -506,7 +516,7 @@ footer{background:#0f1922;color:var(--on-ink-2);padding-block:32px;font-size:15p
    <p class="eyebrow">Government and FEMA work</p>
    <h2 id="gov-title">Between farm jobs, we work storms and contracts.</h2>
    <p>Insured for FEMA work, with completed storm cleanup under a FEMA contract for a power company and site work helping build an FSA office.</p>
-   <a class="btn btn-line" href="government.html">Government and FEMA work <span aria-hidden="true">&rarr;</span></a>
+   <div class="gov-actions"><a class="btn btn-line" href="government.html">Government and FEMA work <span aria-hidden="true">&rarr;</span></a><a class="dl" href="capability-statement.pdf" download="BG-Welsh-capability-statement.pdf"><span class="dl-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg></span><span class="dl-txt"><strong>Download capability statement (PDF)</strong><small>1 page &middot; 250 KB &middot; print ready</small></span></a></div>
   </div>
  </div>
 </section>
