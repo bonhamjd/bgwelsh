@@ -1,4 +1,20 @@
+# AI and search crawlers are welcome.
 User-agent: *
 Allow: /
 
-Sitemap: https://bgwelsh.com/sitemap.xml
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://bonhamjd.github.io/bgwelsh/sitemap.xml
