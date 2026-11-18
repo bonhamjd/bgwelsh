@@ -47,6 +47,8 @@ ul.list{padding-left:18px;display:grid;gap:6px}
 ul.list li::marker{color:var(--rust)}
 ul.list b{font-weight:700}
 .pp{display:grid;gap:12px}
+.ppimg{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:12px}
+.ppimg img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:4px}
 .pp div{border-left:3px solid var(--rust);padding-left:12px}
 .pp h3{font-size:16px}
 .pp p{color:var(--muted);font-size:13.5px}
@@ -64,7 +66,8 @@ dl.data dd{font-weight:600}
  body{background:#fff;font-size:11.5px;line-height:1.42}
  dl.data div{padding:4px 0;grid-template-columns:96px 1fr}
  dl.data dt{font-size:11px}
- .pp{gap:8px}.pp p,.naics li{font-size:11.5px}.naics{gap:3px}
+ .pp{gap:8px}
+ .ppimg img{aspect-ratio:16/9}.pp p,.naics li{font-size:11.5px}.naics{gap:3px}
  ul.list{gap:3px}
  h2{margin-bottom:8px;padding-bottom:6px}
  .foot{padding-top:10px;margin-top:4px;font-size:11px}
@@ -113,9 +116,14 @@ dl.data dd{font-weight:600}
    </section>
    <section>
     <h2>Past performance</h2>
+    <div class="ppimg">
+     <img src="img/print-fema-pole-skidsteer.jpg" width="480" height="360" alt="Skid steer working a broken power pole during FEMA contract storm cleanup">
+     <img src="img/print-fema-pole-trailer.jpg" width="360" height="480" alt="Trailer loaded with broken power poles and transformers set beside it">
+     <img src="img/print-fsa-site-excavator.jpg" width="480" height="335" alt="Mini excavator digging beside a highway on the FSA office job">
+    </div>
     <div class="pp">
-     <div><h3>FEMA contract storm cleanup for a power company</h3><p>Storm cleanup completed under a FEMA contract for a power company. Details on request.</p></div>
-     <div><h3>Site work helping build an FSA office</h3><p>Site work on the build of an FSA office. Details on request.</p></div>
+     <div><h3>FEMA contract storm cleanup for a power company</h3><p>Storm cleanup under a FEMA contract for a power company: pulling broken power poles and hauling them out. Details on request.</p></div>
+     <div><h3>Site work helping build an FSA office</h3><p>Excavation and site work helping build an FSA office. Details on request.</p></div>
      <div><h3>Private site, water and concrete work</h3><p>Retaining wall rebuilds, water main repair around live utilities, concrete pads, water line trenching, sprinkler systems.</p></div>
     </div>
    </section>
