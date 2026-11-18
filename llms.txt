@@ -1,26 +1,34 @@
 # BG Welsh LLC
 
-> Veteran-owned, family-owned excavation, concrete and site work contractor in Franklin, Nebraska 68939, established 2016. Insured for FEMA work, with completed storm cleanup under a FEMA contract for a power company, and site work helping build an FSA office. Takes federal, state, county and city work, plus farm, ranch and commercial jobs.
+> Family-owned, veteran-owned contractor in Franklin, Nebraska 68939, established 2016. Farm and ranch work is the core of the business: cattle waterers, stock water lines, trenching, feedlot runways and bunks, concrete pads, retaining walls and dirt work. BG Welsh also takes government and FEMA work: insured for FEMA work, with completed storm cleanup under a FEMA contract for a power company and site work helping build an FSA office.
 
 - Contact: Gina Welsh, call or text (308) 470-1254
 - Location: Franklin, Nebraska 68939
 - Service area: about two hours of driving from Franklin, covering south-central Nebraska and northern Kansas (Kearney, Grand Island, Hastings, Lexington)
-- Owners: Brian and Gina Welsh
-- Ownership: veteran owned, family owned
+- Owners: Brian and Gina Welsh, who also run a cattle herd
+- Ownership: family owned, veteran owned
 - Insurance: insured for FEMA work
 - NAICS: 238910 site preparation; 238110 poured concrete; 237110 water and sewer lines; 561730 landscaping; 237310 highway, street and bridge; 237990 other heavy and civil; 236220 commercial and institutional building
 
-## Services
+## For farms and ranches
+
+- Cattle waterers set on concrete and plumbed
+- Stock water lines and trenching
+- Feedlot runways, aprons, alleys and bunk concrete
+- Concrete pads
+- Bottomless tank installation
+- Retaining walls
+- Dirt work: backhoe and skid steer digging, grading, cleanup, loading and gravel
+- Lawn sprinkler systems
+
+## For government buyers and contracting officers
 
 - Storm and FEMA recovery: debris cleanup, culverts, drainage, emergency site and road repair
-- Site prep, excavation and trenching
-- Water lines, water line repair, stock waterers and bottomless tanks
-- Concrete pads, feedlot runways and retaining walls
-- Gravel and grading
-- Lawn sprinkler systems
-- Public and commercial site work
+- Past performance: storm cleanup under a FEMA contract for a power company; site work helping build an FSA office
+- Capability statement available as a web page and a PDF
 
 ## Pages
 
-- [Home](https://bonhamjd.github.io/bgwelsh/): services, storm and FEMA recovery, past performance, service area, FAQ
-- [Capability statement](https://bonhamjd.github.io/bgwelsh/capability.html): one-page printable summary for contracting officers
+- [Home: farm and ranch work](https://bonhamjd.github.io/bgwelsh/): services, recent jobs, service area, FAQ
+- [Government and FEMA work](https://bonhamjd.github.io/bgwelsh/government.html): contracting officer facts, NAICS codes, storm and FEMA recovery, past performance, government FAQ
+- [Capability statement](https://bonhamjd.github.io/bgwelsh/capability.html): one-page printable summary ([PDF](https://bonhamjd.github.io/bgwelsh/capability-statement.pdf))
